@@ -41,13 +41,36 @@ A comprehensive, Online Quiz Platform featuring dual portals for "Teachers" and 
 
 ---
 
-## ⚙️ Installation & Setup
+## 🚀 How to Run This Project Locally
 
-### Prerequisites
-- Node.js (v16+)
-- MongoDB (Local or Atlas)
+> ⚠️ The backend and frontend must be run in **separate terminals**.
 
-### 1. Clone the repository
+### 📦 Setup & Run Commands (copy-paste once)
+
 ```bash
-git clone https://github.com/yourusername/quiz-platform.git
-cd quiz-platform
+# Clone the repository
+git clone https://github.com/<your-username>/<repository-name>.git
+cd <repository-name>
+
+# Backend setup
+cd backend
+npm install
+node src/server.js
+
+# IMPORTANT:
+# node src/server.js blocks the terminal.
+# Open a NEW terminal before running the commands below.
+
+# Frontend setup (new terminal)
+cd frontend
+npm install
+npm run dev
+
+```
+## Local URLs
+
+### Backend: http://localhost:5000
+
+### Backend health check: http://localhost:5000/health
+
+### Frontend: http://localhost:5173
